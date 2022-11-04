@@ -15,7 +15,7 @@
     <title>Portfolio</title>
   </head>
 
-  <!-- head -->
+  <!-- html head -->
 
   <body>
     <header class="primary-header">
@@ -62,29 +62,29 @@
               suscipit! Dolorem voluptatum debitis ad!
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-link" onclick="">Skills</p>
+              <p class="tab-link" onclick="">Experience</p>
+              <p class="tab-link" onclick="">Education</p>
             </div>
-            <div class="tab-contents active-tab">
+            <div class="tab-content">
               <ul>
-                <li><span>UI/UX</span><br />Designing Frontend</li>
-                <li><span>Web Dev</span><br />Fullstack Engineer</li>
-                <li><span>Backend</span><br />Deploying apps</li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
-            <div class="tab-contents">
+            <div class="tab-content">
               <ul>
-                <li><span>UI/UX</span><br />Designing Frontend</li>
-                <li><span>Web Dev</span><br />Fullstack Engineer</li>
-                <li><span>Backend</span><br />Deploying apps</li>
+                <li></li>
+                <li></li>
+                <li><</li>
               </ul>
             </div>
-            <div class="tab-contents">
+            <div class="tab-content">
               <ul>
-                <li><span>UI/UX</span><br />Designing Frontend</li>
-                <li><span>Web Dev</span><br />Fullstack Engineer</li>
-                <li><span>Backend</span><br />Deploying apps</li>
+                <li></li>
+                <li></li>
+                <li><</li>
               </ul>
             </div>
           </div>
@@ -94,41 +94,62 @@
     <!-- about me section -->
     <div id="projects">
       <h1 class="sub-title">Projects</h1>
-      <div class="container">
-        <div class="project-card">
-          <img src="#" alt="" />
-          <p class="project-title">Project 1</p>
-        </div>
-        <div class="project-card">
-          <img src="#" alt="" />
-          <p class="project-title">Project 1</p>
-        </div>
-        <div class="project-card">
-          <img src="#" alt="" />
-          <p class="project-title">Project 1</p>
+
+      <div class="project-container">
+        <div class="project-list">
+          <div class="project-card">
+            <img src="imgs/stock_project.png" alt="" />
+            <div class="card-popup">
+              <h4 class="project-title">Project 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
+              <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="imgs/stock_project.png" alt="" />
+            <div class="card-popup">
+              <h4 class="project-title">Project 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
+              <a href="githublink"> <ion-icon name="open-outline"></ion-icon> </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="imgs/stock_project.png" alt="" />
+            <div class="card-popup">
+              <h4 class="project-title">Project 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
+              <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- projects -->
     <div id="contact">
-      <div class="contact-container">
-        <div class="left-contact">
-          <h1 class="sub-title">My Links</h1>
-          <h3>Contact Me:</h3>
-          <p>email here</p>
-          <p>phone # here</p>
-          <p>social media links here</p>
-        </div>
-
-        <div class="right-contact">
-          <h1 class="sub-title">Contact Me</h1>
-          <input type="text" />
-          <input type="email" />
-          <input type="text" />
-          <button type="submit">Submit</button>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">My Contacts</h1>
+            <p><ion-icon name="mail-outline"></ion-icon>zananskij@gmail.com</p>
+            <p><ion-icon name="call-outline"></ion-icon>325-567-9898</p>
+            <div class="social-icons">
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+            <a href="#">Resume</a>
+          </div>
+          <div class="contact-right"></div>
         </div>
       </div>
     </div>
     <!-- contact me  -->
+
+    <!-- import icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

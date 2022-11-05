@@ -17,40 +17,39 @@
 
   <!-- html head -->
 
+  <!-- header section -->
   <body>
-    <header class="primary-header">
-      <!-- header  -->
-      <div class="header">
-        <img src="#" alt="" />
-
+    <div id="header">
+      <div class="container">
         <nav>
-          <ul id="primary-nav">
-            <li class="nav_txt"><a href="#">Home</a></li>
-            <li class="nav_txt"><a href="#">About</a></li>
-            <li class="nav_txt"><a href="#">Projects</a></li>
-            <li class="nav_txt"><a href="#">Contact</a></li>
+          <ul id="nav_bar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <!-- nav -->
+        <!-- nav close-->
+
+        <!-- header text + img -->
         <div class="header-txt">
+          <p>Software Developer</p>
           <h1>
-            Hi! I'm <span>Jon Zananski</span><br />
+            Hi I'm <span> Jon Zananski</span> <br />
             From Orlando, FL
           </h1>
-          <p>────Software Developer</p>
         </div>
       </div>
-      <!-- header -->
-    </header>
+    </div>
+    <!-- header close -->
+
+    <!-- about me section -->
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
-            <img src="#" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p class="about-txt">
+          <div class="about">
+            <h1 class="sec-title">About Me</h1>
+            <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorum quod libero! Eaque, fuga aperiam
               minima perspiciatis, culpa accusamus nemo consequatur necessitatibus, est temporibus reprehenderit quidem.
               Possimus consequuntur tenetur accusantium. Rem, ipsa qui! Tempore ducimus in quibusdam repudiandae fuga
@@ -61,77 +60,107 @@
               Soluta tempora magnam provident in. Distinctio deleniti consequuntur fuga blanditiis at odit tempore
               suscipit! Dolorem voluptatum debitis ad!
             </p>
-            <div class="tab-titles">
-              <p class="tab-link" onclick="">Skills</p>
-              <p class="tab-link" onclick="">Experience</p>
-              <p class="tab-link" onclick="">Education</p>
+            <!-- write a function w jquery to add and remove "active-btn" class -->
+            <!-- write a function w jquery to add and remove "active-btn" class -->
+            <!-- write a function w jquery to add and remove "active-btn" class -->
+
+            <!-- fill out  list + span content  -->
+            <!-- fill out  list + span content  -->
+            <!-- fill out  list + span content  -->
+            <div class="list-btns">
+              <p class="list-title active-btn" onclick="">Skills</p>
+
+              <p class="list-title" onclick="">Experience</p>
+
+              <p class="list-title" onclick="">Education</p>
             </div>
-            <div class="tab-content">
+            <div class="list-content active-list" id="skills">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><span>Web Developer</span><br />Creating Web Applications</li>
+                <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
+                <li><span>QA Engineer</span><br />Assesses quality of application</li>
               </ul>
             </div>
-            <div class="tab-content">
+
+            <div class="list-content" id="experience">
               <ul>
-                <li></li>
-                <li></li>
-                <li><</li>
+                <li><span>Web Developer</span><br />Creating Web Applications</li>
+                <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
+                <li><span>QA Engineer</span><br />Assess quality of application</li>
               </ul>
             </div>
-            <div class="tab-content">
+
+            <div class="list-content" id="education">
               <ul>
-                <li></li>
-                <li></li>
-                <li><</li>
+                <li><span>Web Developer</span><br />Creating Web Applications</li>
+                <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
+                <li><span>QA Engineer</span><br />Assesses quality of application</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- about me section -->
+    <!-- about me section end-->
+
+    <!-- project section  -->
+
+    <!-- get better card imgs -->
+    <!-- add a 2nd row or carousel -->
+    <!-- add github links -->
     <div id="projects">
-      <h1 class="sub-title">Projects</h1>
+      <div class="container">
+        <h1 class="sec-title">Projects</h1>
+        <p>Check out some of my work below!</p>
 
-      <div class="project-container">
-        <div class="project-list">
+        <div class="project-container">
           <div class="project-card">
-            <img src="imgs/stock_project.png" alt="" />
+            <img src="imgs/stock_laptop.jpeg" alt="" />
+
+            <!-- clean up + resize popup  -->
+            <!-- clean up + resize popup  -->
+            <!-- clean up + resize popup  -->
             <div class="card-popup">
-              <h4 class="project-title">Project 1</h4>
+              <h3>Project 1</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
               <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
             </div>
           </div>
 
           <div class="project-card">
-            <img src="imgs/stock_project.png" alt="" />
+            <img src="imgs/stock_laptop.jpeg" alt="" />
             <div class="card-popup">
-              <h4 class="project-title">Project 2</h4>
+              <h3>Project 2</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
-              <a href="githublink"> <ion-icon name="open-outline"></ion-icon> </a>
+              <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
             </div>
           </div>
 
           <div class="project-card">
-            <img src="imgs/stock_project.png" alt="" />
+            <img src="imgs/stock_laptop.jpeg" alt="" />
             <div class="card-popup">
-              <h4 class="project-title">Project 3</h4>
+              <h3>Project 3</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
               <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
             </div>
           </div>
         </div>
+        <a href="add link to personal repo" class="btn">More Projects</a>
       </div>
     </div>
-    <!-- projects -->
+    <!-- projects section end -->
+
+    <!-- contact section -->
+
+    <!-- add social links  -->
+    <!-- add social links  -->
+    <!-- add social links  -->
+
     <div id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">My Contacts</h1>
+            <h1 class="sec-title">My Contacts</h1>
             <p><ion-icon name="mail-outline"></ion-icon>zananskij@gmail.com</p>
             <p><ion-icon name="call-outline"></ion-icon>325-567-9898</p>
             <div class="social-icons">
@@ -140,12 +169,20 @@
               <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
               <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
             </div>
-            <a href="#">Resume</a>
+            <a href="#" class="btn contactbtn">Resume</a>
           </div>
-          <div class="contact-right"></div>
+          <div class="contact-right">
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Your Message" />
+              <button type="submit" class="btn contactbtn">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- contact me  -->
 
     <!-- import icon script -->

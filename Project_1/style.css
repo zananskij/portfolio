@@ -6,6 +6,7 @@
   box-sizing: border-box;
   border: 1px solid gold;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {

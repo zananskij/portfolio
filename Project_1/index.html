@@ -19,172 +19,198 @@
 
   <!-- header section -->
   <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <ul id="nav_bar">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- nav close-->
+    <nav>
+      <ul id="nav_bar">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-        <!-- header text + img -->
-        <div class="header-txt">
-          <p>Software Developer</p>
-          <h1>
-            Hi I'm <span> Jon Zananski</span> <br />
-            From Orlando, FL
-          </h1>
-        </div>
-      </div>
-    </div>
-    <!-- header close -->
+    <div class="section-container">
+      <div id="header">
+        <div class="container">
+          <!-- nav close-->
 
-    <!-- about me section -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about">
-            <h1 class="sec-title">About Me</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorum quod libero! Eaque, fuga aperiam
-              minima perspiciatis, culpa accusamus nemo consequatur necessitatibus, est temporibus reprehenderit quidem.
-              Possimus consequuntur tenetur accusantium. Rem, ipsa qui! Tempore ducimus in quibusdam repudiandae fuga
-              sequi sed provident. Soluta tempora magnam provident in. Distinctio deleniti consequuntur fuga blanditiis
-              at odit tempore suscipit! Dolorem voluptatum debitis ad! sequi sed provident. Soluta tempora magnam
-              provident in. Distinctio deleniti consequuntur fuga blanditiis at odit tempore suscipit! Dolorem
-              voluptatum debitis ad! at odit tempore suscipit! Dolorem voluptatum debitis ad! sequi sed provident.
-              Soluta tempora magnam provident in. Distinctio deleniti consequuntur fuga blanditiis at odit tempore
-              suscipit! Dolorem voluptatum debitis ad!
-            </p>
-            <!-- write a function w jquery to add and remove "active-btn" class -->
-            <!-- write a function w jquery to add and remove "active-btn" class -->
-
-            <!-- fill out  list + span content  -->
-            <!-- fill out  list + span content  -->
-
-            <div class="list-btns">
-              <p class="list-title active-btn" onclick="">Skills</p>
-
-              <p class="list-title" onclick="">Experience</p>
-
-              <p class="list-title" onclick="">Education</p>
-            </div>
-            <div class="list-content active-list" id="skills">
-              <ul>
-                <li><span>Web Developer</span><br />Creating Web Applications</li>
-                <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
-                <li><span>QA Engineer</span><br />Assesses quality of application</li>
-              </ul>
-            </div>
-
-            <div class="list-content" id="experience">
-              <ul>
-                <li><span>Web Developer</span><br />Creating Web Applications</li>
-                <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
-                <li><span>QA Engineer</span><br />Assess quality of application</li>
-              </ul>
-            </div>
-
-            <div class="list-content" id="education">
-              <ul>
-                <li><span>Web Developer</span><br />Creating Web Applications</li>
-                <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
-                <li><span>QA Engineer</span><br />Assesses quality of application</li>
-              </ul>
-            </div>
+          <!-- header text + img -->
+          <div class="header-txt">
+            <p>Software Developer</p>
+            <h1>
+              Hi I'm <span> Jon Zananski</span> <br />
+              From Orlando, FL
+            </h1>
           </div>
         </div>
       </div>
-    </div>
-    <!-- about me section end-->
+      <!-- header close -->
 
-    <!-- project section  -->
+      <!-- about me section -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about">
+              <h1 class="sec-title">About Me</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorum quod consequuntur tenetur
+                accusantium libero! Eaque, fuga aperiam minima perspiciatis, culpa accusamus nemo consequatur
+                necessitatibus, est temporibus reprehenderit quidem. Possimus consequuntur tenetur accusantium. Rem,
+                ipsa qui! Tempore ducimus in quibusdam repudiandae fuga sequi sed provident. Soluta tempora magnam
+                provident in. Distinctio deleniti possimus consequuntur tenetur accusantium. Rem, ipsa qui consequuntur
+                fuga blanditiis at odit tempore suscipit! Dolorem voluptatum debitis ad! sequi sed Possimus consequuntur
+                tenetur accusantium. Rem, ipsa quiSoluta tempora provident. Soluta tempora magnam provident in.
+                repudiandae fuga sequi sed provident, Distinctio deleniti!
+              </p>
+              <!-- write a function w jquery to add and remove "active-btn" class -->
+              <!-- write a function w jquery to add and remove "active-btn" class -->
 
-    <!-- get better card imgs -->
-    <!-- add a 2nd row or carousel -->
-    <!-- add github links -->
-    <div id="projects">
-      <div class="container">
-        <h1 class="sec-title">Projects</h1>
-        <p>Check out some of my work below!</p>
+              <!-- fill out  list + span content  -->
+              <!-- fill out  list + span content  -->
 
-        <div class="project-container">
-          <div class="project-card">
-            <img src="imgs/stock_laptop.jpeg" alt="" />
+              <div class="list-btns">
+                <p class="list-title active-btn" onclick="openList('skills')">Skills</p>
 
-            <!-- clean up + resize popup  -->
-            <!-- clean up + resize popup  -->
-            <!-- clean up + resize popup  -->
-            <div class="card-popup">
-              <h3>Project 1</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
-              <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
-            </div>
-          </div>
+                <p class="list-title" onclick="openList('experience')">Experience</p>
 
-          <div class="project-card">
-            <img src="imgs/stock_laptop.jpeg" alt="" />
-            <div class="card-popup">
-              <h3>Project 2</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
-              <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
-            </div>
-          </div>
+                <p class="list-title" onclick="openList('education')">Education</p>
+              </div>
 
-          <div class="project-card">
-            <img src="imgs/stock_laptop.jpeg" alt="" />
-            <div class="card-popup">
-              <h3>Project 3</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
-              <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
+              <div class="list-content active-list" id="skills">
+                <ul>
+                  <li><span>Web Developer</span><br />Creating Web Applications</li>
+                  <li><span>UI/UX Designer</span><br />Designing User Interfaces</li>
+                  <li><span>QA Engineer</span><br />Assesses quality of application</li>
+                </ul>
+              </div>
+
+              <div class="list-content" id="experience">
+                <ul>
+                  <li>
+                    <span>2023⎯2024</span><br />
+                    Junior Frontend Developer
+                  </li>
+                  <li>
+                    <span>2025⎯2026</span><br />
+                    React JS Developer
+                  </li>
+                  <li><span>2027⎯Current</span><br />Lead Software Engineer</li>
+                </ul>
+              </div>
+
+              <div class="list-content" id="education">
+                <ul>
+                  <li><span>2015⎯2017</span><br />Valencia College</li>
+                  <li><span>2018⎯2021</span><br />University of Centeral Florida</li>
+                  <li><span>2022⎯Current</span><br />General Assembly SEI</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <a href="add link to personal repo" class="btn">More Projects</a>
       </div>
-    </div>
-    <!-- projects section end -->
+      <!-- about me section end-->
 
-    <!-- contact section -->
+      <!-- project section  -->
 
-    <!-- add social links  -->
-    <!-- add social links  -->
-    <!-- add social links  -->
+      <!-- get better card imgs -->
+      <!-- add a 2nd row or carousel -->
+      <!-- add github links -->
+      <div id="projects">
+        <div class="container">
+          <h1 class="sec-title">Projects</h1>
+          <p>Check out some of my work below!</p>
 
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sec-title">My Contacts</h1>
-            <p><ion-icon name="mail-outline"></ion-icon>zananskij@gmail.com</p>
-            <p><ion-icon name="call-outline"></ion-icon>325-567-9898</p>
-            <div class="social-icons">
-              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <div class="project-container">
+            <div class="project-card">
+              <img src="imgs/stock_laptop.jpeg" alt="" />
+
+              <!-- clean up + resize popup  -->
+              <!-- clean up + resize popup  -->
+              <!-- clean up + resize popup  -->
+              <div class="card-popup">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
+                <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
+              </div>
             </div>
-            <a href="#" class="btn contactbtn">Resume</a>
+
+            <div class="project-card">
+              <img src="imgs/stock_laptop.jpeg" alt="" />
+              <div class="card-popup">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
+                <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="imgs/stock_laptop.jpeg" alt="" />
+              <div class="card-popup">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate a exercitationem enim</p>
+                <a href="githublink"><ion-icon name="open-outline"></ion-icon> </a>
+              </div>
+            </div>
           </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <input type="text" placeholder="Your Message" />
-              <button type="submit" class="btn contactbtn">Submit</button>
-            </form>
+          <a href="add link to personal repo" class="btn">More Projects</a>
+        </div>
+      </div>
+      <!-- projects section end -->
+
+      <!-- contact section -->
+
+      <!-- add social links  -->
+      <!-- add social links  -->
+      <!-- add social links  -->
+
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sec-title">My Contacts</h1>
+              <p><ion-icon name="mail-outline"></ion-icon>zananskij@gmail.com</p>
+              <p><ion-icon name="call-outline"></ion-icon>325-567-9898</p>
+              <p><ion-icon name="reader-outline"></ion-icon>Resume here</p>
+              <div class="social-icons">
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </div>
+              <!-- <a href="#" class="btn contactbtn">Resume</a> -->
+            </div>
+            <div class="contact-right">
+              <h1 class="sec-title">Reach Out Below</h1>
+              <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea name="msg" id="msg" cols="155" rows="8" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="btn contactbtn">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- contact me  -->
 
     <!-- import icon script -->
+    <script>
+      var listTitle = document.getElementsByClassName('list-title')
+      var listContent = document.getElementsByClassName('list-content')
+      function openList(listname) {
+        for (tablink of listTitle) {
+          tablink.classList.remove('active-btn')
+        }
+        for (tabcontent of listContent) {
+          tabcontent.classList.remove('active-list')
+        }
+        event.currentTarget.classList.add('active-btn')
+        document.getElementById(listname).classList.add('active-list')
+      }
+    </script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>

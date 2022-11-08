@@ -1,5 +1,4 @@
 /* global + body css */
-
 * {
   margin: 0;
   padding: 0;
@@ -17,47 +16,46 @@ body {
 .section-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
-  /* scroll-snap-align: start; */
+  height: 90vh;
+  scroll-snap-align: start;
 }
 /* <-------header section css-------> */
-
 #header {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: black;
-  /* background-image: url(imgs/unsplash_header_1.jpg);
-  background-position: center;
-  background-size: cover; */
   scroll-snap-align: start;
+}
+
+a.style-switch {
+  font-size: 1em;
+  text-decoration: none;
+  background-color: wheat;
+  color: black;
+  padding: 0.5% 0.5%;
+  opacity: 15%;
+}
+a.style-switch:hover {
+  opacity: 100%;
 }
 
 #nav_bar {
   display: flex;
   justify-content: right;
   background: black;
+  height: 4rem;
 }
 
 .container {
   padding: 1% 20%;
   margin: 0.8%;
-  /* scroll-snap-type: y mandatory;
-  overflow-y: scroll; */
   height: 100vh;
 }
-
-/* nav {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-wrap: wrap;
-} */
 
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 1% 5%;
-  /* margin: 10px 20px; */
+  margin: 1% 3%;
 }
 
 nav ul li a {
@@ -65,13 +63,13 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.5em;
   position: relative;
-  position: fixed;
+  /* position: fixed; */
 }
 
 nav ul li a::after {
   content: '';
   width: 0;
-  height: 4px;
+  height: 6px;
   background: crimson;
   position: absolute;
   left: 0;
@@ -95,43 +93,109 @@ nav ul li a:hover::after {
   color: crimson;
 }
 
+/* @media (max-width: 360px) {
+  .header-txt {
+    font-size: 0.1em;
+    margin-top: 60%;
+  }
+} */
+
+@media (max-width: 900px) {
+  .header-txt {
+    font-size: 2em;
+    margin-top: 60%;
+  }
+  a.style-switch {
+    display: none;
+  }
+  #nav_bar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  #nav_bar {
+    display: flex;
+    justify-content: left;
+  }
+  nav ul li {
+    margin: 1% 2%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: left;
+  }
+  nav ul li a {
+    font-size: 1em;
+  }
+  .header-txt p {
+    font-size: 1em;
+    margin-bottom: 15%;
+  }
+  .header-txt h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 450px) {
+  #nav_bar {
+    display: flex;
+    justify-content: left;
+    height: 1.3rem;
+  }
+  nav ul li {
+    margin: 1% 2%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: left;
+  }
+  nav ul li a {
+    font-size: 1em;
+  }
+  a.style-switch {
+    display: none;
+  }
+  .header-txt p {
+    font-size: 1.2em;
+    margin-bottom: 15%;
+  }
+  .header-txt h1 {
+    font-size: 1.5em;
+  }
+}
 /* <-------about section css-------> */
 
 #about {
   width: 100%;
-  height: 100vh;
-  padding: 80px 0;
+  height: 90vh;
+  padding: 20px 0;
   color: black;
   background: wheat;
   scroll-snap-align: start;
 }
 
 .sec-title {
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 0.3em;
   color: crimson;
 }
 .about p {
-  font-size: 2em;
+  font-size: 1.7em;
   margin-bottom: 1em;
 }
 
-/* About buttons (skill / experience / education) */
 .list-btns {
   display: flex;
-  margin: 40px 0;
+  margin: 20px 0;
   color: black;
   font-size: 1em;
 }
 
 .list-title {
   margin-right: 50px;
-  /* font-size: 5em; */
   cursor: pointer;
   position: relative;
 }
-
-/* Selected button effect */
 .list-title::after {
   content: '';
   width: 0;
@@ -146,14 +210,6 @@ nav ul li a:hover::after {
 .list-title.active-btn::after {
   width: 80%;
 }
-
-/* List content */
-/* List content */
-/* List content */
-/* List content */
-/* List content */
-/* List content */
-/* List content */
 
 .list-content ul li {
   list-style: none;
@@ -173,11 +229,103 @@ nav ul li a:hover::after {
   display: block;
 }
 
+@media (max-width: 900px) {
+  .sec-title {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    color: crimson;
+  }
+  .about p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .list-btns {
+    display: flex;
+    margin: 20px 0;
+    color: black;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 900px) {
+  .sec-title {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    color: crimson;
+  }
+  .about p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .list-btns {
+    display: flex;
+    margin: 20px 0;
+    color: black;
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px) {
+  .sec-title {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+    color: crimson;
+  }
+  .about p {
+    font-size: 0.7em;
+    margin-bottom: 1.2em;
+  }
+
+  .list-btns {
+    display: flex;
+    margin: 15px 0;
+    color: black;
+    font-size: 1.6em;
+  }
+  .list-content ul li {
+    list-style: none;
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+  #about .container {
+    padding: 3%;
+  }
+}
+
+@media (max-width: 450px) {
+  .sec-title {
+    font-size: 2em;
+    margin-top: 0%;
+  }
+  .about p {
+    font-size: 0.9em;
+    margin: 0% 0%;
+  }
+  .list-btns {
+    display: flex;
+    margin: 15px 0;
+    color: black;
+    font-size: 1.2em;
+  }
+  .list-title {
+    padding: 0% 4%;
+  }
+  .list-content ul li {
+    list-style: none;
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+  .list-title.active-btn::after {
+    height: 3px;
+  }
+}
+
 /* <-------project section css-------> */
 
 #projects {
-  height: 100vh;
-  padding: 30px;
+  height: 90vh;
+  padding: 0;
   background: black;
   scroll-snap-align: start;
 }
@@ -187,12 +335,22 @@ nav ul li a:hover::after {
 }
 
 #projects .container p {
-  margin-top: 2%;
+  margin-top: 1%;
+}
+
+#projects h3 {
+  font-size: 2em;
+  color: crimson;
 }
 
 #projects p {
-  margin-bottom: 1%;
-  font-size: 20px;
+  margin-bottom: 3%;
+  font-size: 1.5em;
+}
+
+#projects .container {
+  padding: 1%;
+  margin: 0 15%;
 }
 
 .project-container {
@@ -212,10 +370,86 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 
+@media (max-width: 1300px) {
+  .card-popup p {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #projects {
+    padding: 2%;
+  }
+
+  #projects p {
+    font-size: 1em;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  #projects h3 {
+    font-size: 1.2em;
+    color: crimson;
+  }
+
+  .project-container {
+    flex-direction: column;
+    padding: 1% 20%;
+  }
+
+  .project-card {
+    margin: 4%;
+  }
+
+  .card-popup p {
+    display: none;
+  }
+  .card-popup a {
+    color: crimson;
+  }
+  a.btn {
+    margin: 1em 1.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  #projects {
+    padding: 5%;
+  }
+
+  #projects p {
+    font-size: 0.7em;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  #projects h3 {
+    font-size: 1em;
+    color: crimson;
+  }
+
+  .project-container {
+    flex-direction: column;
+    padding: 1% 10%;
+  }
+
+  .project-card {
+    margin: 4%;
+  }
+
+  .card-popup p {
+    display: none;
+  }
+  .card-popup a {
+    color: crimson;
+  }
+  a.btn {
+    margin: 1em 1.5em;
+  }
+}
+
 .card-popup {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), black);
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), black);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -231,9 +465,13 @@ nav ul li a:hover::after {
   transition: height 0.5s;
 }
 
+.project-card:hover .card-popup {
+  height: 100%;
+}
+
 .card-popup h3 {
   margin-top: 3%;
-  margin-bottom: 0;
+  margin-bottom: 2%;
 }
 
 .card-popup a {
@@ -249,20 +487,16 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
-.project-card:hover img {
+/* .project-card:hover img {
   transform: scale(1.2);
-}
-
-.project-card:hover .card-popup {
-  height: 100%;
-}
+} */
 
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 0;
   width: fit-content;
   border: 1px solid crimson;
-  padding: 14px 50px;
+  padding: 0;
   border-radius: 8px;
   text-decoration: none;
   color: white;
@@ -276,10 +510,14 @@ nav ul li a:hover::after {
 /* <-------contact section css-------> */
 
 #contact {
-  height: 100vh;
+  height: 90vh;
   background: wheat;
   padding-top: 50px;
   scroll-snap-align: start;
+}
+
+#contact .container {
+  padding: 5% 5%;
 }
 
 .row {
@@ -294,11 +532,12 @@ nav ul li a:hover::after {
 
 .contact-right {
   flex-basis: 55%;
+  padding-left: 5%;
 }
 
 .contact-left p {
   margin-top: 30px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .contact-left p {
@@ -307,8 +546,8 @@ nav ul li a:hover::after {
 
 .contact-left p ion-icon {
   color: black;
-  margin-top: 0.5em;
-  margin-right: 15px;
+  margin-top: 0.2em;
+  margin-right: 0.2em;
   font-size: 5em;
   transition: transform 0.5s;
 }
@@ -319,15 +558,16 @@ nav ul li a:hover::after {
 }
 
 .social-icons {
-  margin-top: 30px;
+  margin-top: 1px;
+  margin-left: 25%;
 }
 
 .social-icons a {
   text-decoration: none;
-  font-size: 5em;
-  margin-top: 1em;
-  margin-right: 15px;
-  margin-left: 25px;
+  font-size: 6em;
+  margin-top: 2.5em;
+  margin-right: 0.2em;
+  margin-left: 0.4em;
   color: black;
   display: inline-block;
   transition: transform 0.5s;
@@ -391,7 +631,7 @@ form .contactbtn {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid crimson;
+  border: 2px solid crimson;
   padding: 14px 50px;
   border-radius: 8px;
   text-decoration: none;
@@ -406,4 +646,85 @@ form .contactbtn {
 .btn.contactbtn:hover {
   color: black;
   border: 3px solid black;
+}
+
+@media (max-width: 450px) {
+  #contact p {
+    font-size: 0.8em;
+  }
+
+  #contact .container {
+    padding: 3%;
+    margin: 5%;
+  }
+
+  #contact h1.sec-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #contact .container {
+    display: flex;
+    direction: column;
+  }
+  .contact-left p ion-icon {
+    font-size: 2em;
+    display: row;
+    margin-top: 5%;
+  }
+
+  .social-icons {
+    margin-top: 35%;
+    margin-right: 2%;
+  }
+  .social-icons a {
+    font-size: 3em;
+    margin-left: 10%;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .social-icons a:hover {
+    color: crimson;
+    transform: translateY(-10px);
+  }
+  form input {
+    margin: 10%;
+  }
+
+  .contact-right form {
+    padding-top: 25%;
+  }
+
+  .btn {
+    margin-left: 10%;
+  }
+}
+
+.contactModal {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid 2px white;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  visibility: hidden;
+}
+.modalForm {
+  background-color: darkgray;
+  color: black;
+  border: solid 2px #666;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  padding: 0 2.5em 0 1.8em;
+  width: 20%;
+  position: absolute;
+  right: 95%;
+  top: 30%;
+  visibility: hidden;
+}
+
+.contactModal.active .modalForm.active {
+  visibility: visible;
 }

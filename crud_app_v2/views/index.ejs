@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <h1>Task Manager</h1>
+      <br />
+      <a class="btn btn-outline-success" href="/new">Create Task</a> <br />
+      <br />
+      <table id="myTable" class="table table-hover">
+        <tr class="table-success">
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Date</th>
+          <th onclick="sortTable(2)">Priority</th>
+          <th onclick="sortTable(3)">Task</th>
+          <th onclick="sortTable(4)">Edit</th>
+          <th onclick="sortTable(5)">Delete</th>
+        </tr>
+
+        <!-- <tr>
+          <td><a type="button" class="btn btn-light" href="./<%task.id%>">Presentation</a></td>
+          <td>2022-11-28</td>
+          <td>High</td>
+          <td>Project 2 presentations</td>
+          <td>
+            <form><a class="btn btn-outline-warning" href="/task/6314ebfe38e8b5e1f49d34d0/edit">Edit</a></form>
+          </td>
+          <td>
+            <form action="/task/6314ebfe38e8b5e1f49d34d0?_method=DELETE" method="POST">
+              <input class="btn btn-outline-danger" type="submit" value="delete" />
+            </form>
+          </td>
+        </tr> -->
+
+        <% for (let i=0; i <task.length; i++){ %>
+            <tr>
+              <!-- <td class="list-group-item"> -->
+                <td><a type="button" class="btn btn-light" href="./<%=task[i].id%>"><%=task[i].name%></a> <br></td>
+                 <td><%=task[i].date%></td>
+                 <td><%=task[i].prio%></td>
+                 <td><%=task[i].task%></td>
+                 <td>
+                  <form><a class="btn btn-outline-warning" href="./<%=task[i].id%>/edit">Edit</a></form>
+                </td>
+                <td>
+                <form action="/<%=task[i].id%>?_method=DELETE" method="POST">
+                  <input class="delete btn btn-outline-danger" type="submit" value="DELETE" />
+                </form>
+                </td>
+              <!-- </td> -->
+         
+            </tr>
+              <% } %>
+
+      </table>
+    </div>
+  </body>
+</html>

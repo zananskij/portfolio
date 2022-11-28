@@ -2,23 +2,7 @@
 <html lang="en">
   <head>
     <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Show Task</title>
-
-      <link rel="stylesheet" href="../public/styles.css">
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-        crossorigin="anonymous"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"
-      ></script>
+        <%- include('../partials/head.ejs') %>
     </head>
   </head>
   <body>
@@ -30,11 +14,11 @@
       <h1 class=>Edit Task</h1>
 
       <div id="form">
-        <form class="col-3" action="/<%=editTask._id%>?_method=PUT" method="POST">
+        <form class="col-lg-6 col md-8 col-sm-8 col-xs-1" action="/<%=editTask._id%>?_method=PUT" method="POST">
             
             <div class="form-group">
-                <label for="name">Name:</label> 
-                <input type="text" class="form-control" name="name"  value="<%=editTask.name%>" /> 
+                <label for="title">Title:</label> 
+                <input type="text" class="form-control" name="title"  value="<%=editTask.title%>" /> 
             </div>
 
 
@@ -50,15 +34,16 @@
                 </div>
                 
 
-                <div class="form-group">
+                <div class="form-group mb-0">
                     <label for="task">Task:</label>
-                    <input type="text" class="form-control" name="task" value="<%=editTask.task%>" />
+                    <textarea name="task" class="form-control" cols="30" rows="5" type="text" value="<%=editTask.task%>"></textarea>
+                    <!-- <input name="task" class="form-control" type="text" value="<%=editTask.task%>" /> -->
                 </div>
                 
           
             <br />
-            <input class="btn btn-outline-warning" type="submit" value="Edit Task" />
-            <a class="btn btn-outline-success" href="/">View All</a>
+            <input class="btn btn-outline-warning" type="submit" value="Update Task" />
+            <a class="btn btn-outline-info" href="/">View All</a>
 
           </form>
         </div>
@@ -69,27 +54,3 @@
 </html>
 
 
-<form class="row row-cols-lg-auto g-3">
-	<div class="col">
-		<label class="visually-hidden" for="inline-form-name">Name</label> <input
-			type="text" class="form-control" id="inline-form-name"
-			placeholder="Name">
-	</div>
-
-	<div class="col">
-		<label class="visually-hidden" for="inline-form-email">Email</label>
-		<input type="text" class="form-control" id="inline-form-email"
-			placeholder="Email">
-	</div>
-
-
-	<div class="col">
-		<label class="visually-hidden" for="inline-form-website">website</label>
-		<input type="text" class="form-control" id="inline-form-website"
-			placeholder="Website">
-	</div>
-
-	<div class="col">
-		<button type="submit" class="btn btn-primary">Submit Form</button>
-	</div>
-</form>

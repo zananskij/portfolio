@@ -16,6 +16,8 @@ app.listen(3000, () => {
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
+app.use(express.static('public'))
+
 // Importing schema and tasks
 const Task = require('./models/tasks.js')
 const Schema = require('./models/taskSchema.js')

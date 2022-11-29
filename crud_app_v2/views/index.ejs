@@ -8,7 +8,7 @@
       <br />
       <h1 class="text-center" >Task Manager</h1>
       <br />
-      <a class="btn btn-outline-success" style="margin-left: 2%;" href="/new">Create Task</a> <br />
+      <a class="btn btn-outline-success" style="margin-left: 1.5%;" href="/new">Create Task</a> <br />
       <br />
       <div class="table-responsive col-12 ">
         <table id="myTable" class="table table-striped" >
@@ -27,9 +27,6 @@
                   <td><a type="button" class="btn btn-outline-info" href="./<%=task[i].id%>"><%=task[i].title%></a> <br></td>
                    <td><%=task[i].date%></td>
                    <td><%=task[i].prio%></td>
-
-
-                   
                    <td><%=task[i].task%></td>
                    <td>
                     <form><a class="btn btn-outline-warning" href="./<%=task[i].id%>/edit">Edit</a></form>

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/zananskij/portfolio/issues"
   },
-  "homepage": "https://github.com/zananskij/portfolio#readme"
+  "homepage": "https://github.com/zananskij/portfolio#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }
